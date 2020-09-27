@@ -130,7 +130,7 @@ img {
 }
 
 .banner-image {
-    background: url("../images/kippford.jpg");
+    background: url("../images/kippford1.jpg");
     background-color: #cccccc;
     height: 200px;
     background-position: center;
@@ -289,14 +289,7 @@ div.container {
     margin-right: auto;
 }
 
-#gallary img{
-    display: block;
-    padding-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 200px;
-}
+
 
 
 
@@ -366,7 +359,19 @@ div.desc {
         display: block;
         margin-bottom: 20px;
     }
+    div.gallery img {
+        width: 180%;
+        height: auto;
+    }
 }
+
+
+
+   
+
+
+
+
 
 /* Style the counter cards */
 .card {

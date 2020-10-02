@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!----------- Required meta tags ----------->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!----------- Bootstrap CSS ----------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!----------- Personalised style sheet ----------->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <!----------- Font Awsome----------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial;
+    }
+
+    /* The grid: Four equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+    }
+
+    /* Style the images inside the grid */
+    .column img {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .column img:hover {
+        opacity: 1;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* The expanding image container */
+    .container {
+        position: relative;
+        display: none;
+    }
+
+    /* Expanding image text */
+    #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-size: 20px;
+    }
+
+    /* Closable button inside the expanded image */
+    .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+</style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170119561-3"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-170119561-3');
+</script>
+
+
+    <title>Ben Lawers Luxury Lodges</title>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!----------- Heading ----------->
+    <div class="banner-image">
+        <div class="banner-text">
+            <h1>Ben Lawers Luxury Lodges</h1>
+            <h2>Welcome to Wee Annies</h2>
+            <h3>Kippford, Dalbeattie, Scotland</h3>
+        </div>
+    </div>
+
+    <!----------- End of heading ----------->
+
+    
+
+    <!----------- Navbar ----------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp; Home <span class="sr-only">(current)</span></a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lodge.html"><i class="fas fa-bed"></i>&nbsp;The Lodge</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="attractions.html"><i class="fas fa-info-circle"></i>&nbsp;Local Attractions</a>
+                </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false"><i class="fas fa-camera"></i>&nbsp;
+                      Gallery
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="gallary-area.html">Local Area Photos</a>
+                      <a class="dropdown-item" href="gallary-interior.html">Interior Photos</a>
+                      <a class="dropdown-item" href="gallary-exterior.html">Exterior Photos</a>
+                  </div>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="testimonials.html"><i class="fas fa-comments"></i>&nbsp;Testimonials</a>
+                </li>   
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"><i class="fas fa-paper-plane"></i>&nbsp;Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!----------- end of navbar ----------->
+
+          <!----------- Page Content ----------->
+
+
+          <div style="text-align:center">
+              <h2>Gallery - Interior </h2>
+              <p>Please click on the images below:</p>
+          </div>
+
+          <!-- The four columns -->
+          <div class="row">
+              <div class="column">
+                  <img src="assets/images/living/6.JPG" alt="&nbsp;Hot Tub" style="width:100%"
+                      onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                  <img src="assets/images/bedrooms/1.JPG" alt="&nbsp;Bedrooms" style="width:100%"
+                      onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                  <img src="assets/images/bedrooms/2.JPG" alt="&nbsp;Bedrooms" style="width:100%"
+                      onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                  <img src="assets/images/living/1.JPG" alt="&nbsp;Living Area" style="width:100%"
+                      onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                  <img src="assets/images/living/2.JPG" alt="&nbsp;Living Area" style="width:100%"
+                      onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                  <img src="assets/images/living/3.JPG" alt="&nbsp;Living Area" style="width:100%"
+                      onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                  <img src="assets/images/living/4.JPG" alt="&nbsp;Living Area" style="width:100%"
+                      onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                  <img src="assets/images/living/5.JPG" alt="&nbsp;Living Area" style="width:100%"
+                      onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                  <img src="assets/images/living/7.JPG" alt="&nbsp;Living Area" style="width:100%"
+                      onclick="myFunction(this);">
+              </div>
+
+          </div>
+
+          <div class="container">
+              <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+              <img id="expandedImg" style="width:100%">
+              <div id="imgtext"></div>
+          </div>
+
+          <script>
+              function myFunction(imgs) {
+                  var expandImg = document.getElementById("expandedImg");
+                  var imgText = document.getElementById("imgtext");
+                  expandImg.src = imgs.src;
+                  imgText.innerHTML = imgs.alt;
+                  expandImg.parentElement.style.display = "block";
+              }
+          </script>
+
+
+    <!----------- Page Content ----------->
+    <!----------- End of Page ----------->
+
+    <!----------- Optional JavaScript ----------->
+    <!----------- jQuery first, then Popper.js, then Bootstrap JS ----------->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+ <script>
+     //Get the button
+     var mybutton = document.getElementById("myBtn");
+
+     // When the user scrolls down 20px from the top of the document, show the button
+     window.onscroll = function () {
+         scrollFunction()
+     };
+
+     function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+             mybutton.style.display = "block";
+         } else {
+             mybutton.style.display = "none";
+         }
+     }
+
+     // When the user clicks on the button, scroll to the top of the document
+     function topFunction() {
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+     }
+ </script>
+
+</body>
+
+</html>

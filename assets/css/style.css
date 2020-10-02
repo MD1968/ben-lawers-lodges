@@ -85,10 +85,6 @@ body {
                      Georgia,
                      serif;
                  font-size: 24px;
-
-
-
-
              }
         
 
@@ -130,9 +126,9 @@ img {
 }
 
 .banner-image {
-    background: url("../images/kippford1.jpg");
+    background: url("../images/banner.JPG");
     background-color: #cccccc;
-    height: 200px;
+    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -352,6 +348,36 @@ div.desc {
     clear: both;
 }
 
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;}
+
+
+  #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #6a6a6e;
+      ;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+  }
+
+  #myBtn:hover {
+      background-color: #1d04fd;
+      ;
+  }
+
 /* Responsive columns */
 @media screen and (max-width: 600px) {
     .column {
@@ -363,20 +389,115 @@ div.desc {
         width: 180%;
         height: auto;
     }
+     h1 {
+         font-family: TimesNewRoman,
+             "Times New Roman",
+             Times,
+             Baskerville,
+             Georgia,
+             serif;
+         font-size: 25px;
+         font-style: normal;
+         font-variant: normal;
+         font-weight: 30;
+         line-height: 16.4px;
+         text-transform: capitalize;
+     }
+     h2 {
+         font-family: TimesNewRoman,
+             "Times New Roman",
+             Times,
+             Baskerville,
+             Georgia,
+             serif;
+         font-size: 16px;
+         font-style: normal;
+         font-variant: normal;
+         font-weight: 200;
+         line-height: 26.4px;
+         text-transform: capitalize;
+         padding-top: 3%;
+
+     }
+
+     h3 {
+         font-family: TimesNewRoman,
+             "Times New Roman",
+             Times,
+             Baskerville,
+             Georgia,
+             serif;
+         font-size: 10px;
+         font-style: normal;
+         font-variant: normal;
+         font-weight: 700;
+         line-height: 15.4px;
+         text-transform: capitalize;
+         padding-top: 3%;
+
+     }
+
+}
+
+
+/* iPhone 6 landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    #gallery img {
+        width: 90%;
+        height: auto;
+    }
+    }
+}
+
+/* iPhone 6 portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+#gallery img {
+    width: 90%;
+    height: auto;
+}
+}
+}
+
+
+/* iPhone 6 Plus landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
+   #gallery img {
+       width: 90%;
+       height: auto;
+   }
+   }
+}
+
+
+/* iPhone 6 Plus portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3) {
+    #gallery img {
+        width: 90%;
+        height: auto;
+    }
+    }
 }
 
 
 
-   
-
-
-
-
-
-/* Style the counter cards */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
+/* iPhone 6 and 6 Plus */
+@media only screen and (max-device-width: 640px),
+only screen and (max-device-width: 667px),
+only screen and (max-width: 480px) {
+   #gallery img {
+       width: 80%;
+       height: auto;
+   }
+   }
 }
+
+
+@media only screen and (min-width : 1224px) {
+#gallery img {
+    width: 20%;
+    height: auto;
+}
+
+
+
+

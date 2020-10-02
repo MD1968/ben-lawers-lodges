@@ -16,6 +16,20 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170119561-3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-170119561-3');
+        </script>
+
+
     <title>Ben Lawers Luxury Lodges</title>
 </head>
 
@@ -31,38 +45,46 @@
 
     <!----------- End of heading ----------->
     <!----------- Navbar ----------->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp; Home <span
-                            class="sr-only">(current)</span></a>
-                </li>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="lodge.html"><i class="fas fa-bed"></i>&nbsp;The Lodge</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="attractions.html"><i class="fas fa-info-circle"></i>&nbsp;Local
-                        Attractions</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html"><i class="fas fa-comments"></i>&nbsp;Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="testimonials.html"><i class="fas fa-comments"></i>&nbsp;Testimonials</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html"><i class="fas fa-paper-plane"></i>&nbsp;Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!----------- end of navbar ----------->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarText">
+         <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                 <a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp; Home <span
+                         class="sr-only">(current)</span></a>
+             </li>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="lodge.html"><i class="fas fa-bed"></i>&nbsp;The Lodge</a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="attractions.html"><i class="fas fa-info-circle"></i>&nbsp;Local
+                     Attractions</a>
+             </li>
+             <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                     aria-haspopup="true" aria-expanded="false"><i class="fas fa-camera"></i>&nbsp;
+                     Gallery
+                 </a>
+                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="gallary-area.html">Local Area Photos</a>
+                     <a class="dropdown-item" href="gallary-interior.html">Interior Photos</a>
+                     <a class="dropdown-item" href="gallary-exterior.html">Exterior Photos</a>
+                 </div>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="testimonials.html"><i class="fas fa-comments"></i>&nbsp;Testimonials</a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="contact.html"><i class="fas fa-paper-plane"></i>&nbsp;Contact Us</a>
+             </li>
+         </ul>
+     </div>
+ </nav>
+ <!----------- end of navbar ----------->
 
     <!----------- Page Content ----------->
 

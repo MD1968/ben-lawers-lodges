@@ -1,67 +1,101 @@
 <!DOCTYPE html>
-<html>
-<!------------------- Links to metanames  ------------------->
-
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
-<meta name="author" content="Mark Dyson" />
-
-<meta name="description"
-    content="Mark Dyson Director Silverheath Limited website design brixworth nortghamptonshire full stack developer" />
-
+<html lang="en">
 
 <head>
-   <!----------- Required meta tags ----------->
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!----------- Required meta tags ----------->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!----------- Bootstrap CSS ----------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <!----------- Personalised style sheet ----------->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
     <!----------- Font Awsome----------->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
+<style>
+    * {
+        box-sizing: border-box;
+    }
 
-   <!----------- Personalised style sheet ----------->
-   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    body {
+        margin: 0;
+        font-family: Arial;
+    }
 
-    <!------------------- Page title  ------------------->
+    /* The grid: Four equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+    }
+
+    /* Style the images inside the grid */
+    .column img {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .column img:hover {
+        opacity: 1;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* The expanding image container */
+    .container {
+        position: relative;
+        display: none;
+    }
+
+    /* Expanding image text */
+    #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-size: 20px;
+    }
+
+    /* Closable button inside the expanded image */
+    .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+</style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170119561-3"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-170119561-3');
+</script>
+
 
     <title>Ben Lawers Luxury Lodges</title>
-
-    <!------------------- Links to Javascript  ------------------->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/js/github-information.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170119561-3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-170119561-3');
-    </script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<!------------------- Begining Of Body  ------------------->
-
-<!------------------- Begining Of Navbar  ------------------->
-
-
 <body>
-
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <!----------- Heading ----------->
     <div class="banner-image">
@@ -73,6 +107,9 @@
     </div>
 
     <!----------- End of heading ----------->
+
+    
+
     <!----------- Navbar ----------->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -116,57 +153,61 @@
     </nav>
 
     <!----------- end of navbar ----------->
-    <!------------ Page Content  ------------>
 
-        <div class="container" id="tag-line">
-            <h3>Please get in touch</h3>
-        </div>
-
-        <div class="container" id="contact-form">
-
-            <form action="assets/php/mail.php" method="post">
-                <noscript>
-                    <p><input type="hidden" name="nojs" id="nojs" /></p>
-                </noscript>
-                <input type="text" name="name" class="form-control" id="name" placeholder="Name" /><br />
-                <input type="text" name="email" class="form-control" id="email" placeholder="email" /><br />
-
-                <textarea rows="5" name="comments" class="form-control" id="comments" placeholder="Comments"
-                    required></textarea>
-                </p>
-                <p>
+          <!----------- Page Content ----------->
+      <!----------- Page Content ----------->
 
 
-                    <div id="recaptcha">
+      <div style="text-align:center">
+          <h2>Gallery - Local Area </h2>
+          <p>Please click on the images below:</p>
+      </div>
 
-                        <script src="https://www.google.com/recaptcha/api.js"></script>
-                        <div class="g-recaptcha" data-sitekey="6LeFR9IZAAAAAP3JJTiti4RE4VEAsI3tMxPQS5Mn"></div>
-                    </div>
-                    <br>
-                    <button type="submit" class="btn btn-secondary center-block"><i
-                            class="fas fa-paper-plane"></i>&nbsp;Send
-                            Message </button>
-        </div>
-        </div>
-        </p>
+<!-- The four columns -->
+<div class="row">
+    <div class="column">
+        <img src="assets/images/area/1.jpg" alt="&nbsp;Local Area" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="assets/images/area/2.jpg" alt="&nbsp;Local Area" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="assets/images/area/3.jpg" alt="&nbsp;Local Area" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="assets/images/area/4.jpg" alt="&nbsp;Local Area" style="width:100%" onclick="myFunction(this);">
+    </div>
 
-        </form>
-        </div>
-        </div>
-        </div>
-    </section>
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+    </div>
+
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+    <!----------- Page Content ----------->
+    <!----------- End of Page ----------->
 
     <!----------- Optional JavaScript ----------->
     <!----------- jQuery first, then Popper.js, then Bootstrap JS ----------->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
  <script>
      //Get the button
      var mybutton = document.getElementById("myBtn");
